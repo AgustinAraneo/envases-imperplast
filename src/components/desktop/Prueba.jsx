@@ -1,11 +1,11 @@
 import React from 'react'
-import NavbarHome from '../ui/Navbar'
+import Home from './Home'
 
 
 const Prueba = () => {
     return (
         <div className=''>
-            <p>Prueba</p>
+            <Home />
         </div>
     )
 }
