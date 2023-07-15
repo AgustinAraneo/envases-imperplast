@@ -1,16 +1,16 @@
 import React from 'react';
-import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import { FiChevronDown } from 'react-icons/fi';
 
 const Navbar = () => {
     return (
         <nav className="bg-white w-full font-sans font-medium">
-            <div className="flex items-center justify-between p-4 mx-[5%]">
+            <div className="flex items-center justify-between py-4 mx-[5%]">
                 <div className="flex items-center">
                     <img src="/images/logo/logo-ns-negro.png" alt="Logo de la empresa" className="h-12 w-12" />
                 </div>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-10">
                     <NavLink href="/" text="Inicio" />
-                    <NavLink href="/sobre-nosotros" text="Sobre Nosotros" />
+                    <NavLink href="/sobre-nosotros" text="Nosotros" />
                     <NavLinkDropdown text="Productos">
                         <DropdownItem href="/envase-al-vacio" text="Envase al vacío">
                             <DropdownSubItem href="/tapa" text="- Tapa y Fondo" />
@@ -64,7 +64,7 @@ const NavLinkDropdown = ({ text, children }) => {
                 )}
             </button>
             {isOpen && (
-                <div className="absolute bg-gray-300 w-[190px] mt-2 p-2 rounded shadow-2xl ">
+                <div className="absolute bg-gray-200 w-[190px] mt-2 p-2 rounded shadow-2xl ">
                     {children}
                 </div>
             )}
@@ -94,7 +94,7 @@ const DropdownItem = ({ href, text, children, hasSubcategories = true }) => {
                 )}
             </button>
             {isOpen && (
-                <div className="bg-white w-auto mt-2 mb-2 rounded space-y-2">
+                <div className="bg-gray-200 w-auto mt-2 mb-2 rounded space-y-2">
                     {children}
                 </div>
             )}
