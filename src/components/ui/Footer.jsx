@@ -4,7 +4,7 @@ export default function FooterDesktop() {
     return (
         <footer className="w-full bg-black/90 p-8">
             <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12  text-center md:justify-between ">
-                <img src="/images/logo/logo-ns-negro.png" alt="logo-ct" className="w-10" />
+                <img src="/images/logo/blanco.png" alt="logo-ct" className="w-14 ml-10" />
                 <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
                     <li>
                         <Typography
@@ -19,7 +19,7 @@ export default function FooterDesktop() {
                     <li>
                         <Typography
                             as="a"
-                            href="#"
+                            href="/nosotros"
                             color="white"
                             className="font-medium transition-colors hover:text-blue-500 focus:text-blue-500"
                         >

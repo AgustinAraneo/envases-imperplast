@@ -5,11 +5,13 @@ import FraseHome from './FraseHome'
 import NosotrosHome from './NosotrosHome'
 import FooterDesktop from '../ui/Footer'
 import ContactoHome from './ContactoHome'
+import ScrollButton from '../ui/ScrollButton'
 
 
 const Prueba = () => {
     return (
         <div className=''>
+            <ScrollButton />
             <Home />
             <ProductosHome />
             <NosotrosHome />

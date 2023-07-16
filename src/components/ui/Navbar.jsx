@@ -1,16 +1,18 @@
 import React from 'react';
 import { FiChevronDown } from 'react-icons/fi';
+import Link from 'next/link'
+import Image from 'next/image';
 
 const Navbar = () => {
     return (
         <nav className="bg-white w-full font-sans font-medium">
             <div className="flex items-center justify-between py-4 mx-[5%]">
                 <div className="flex items-center">
-                    <img src="/images/logo/logo-ns-negro.png" alt="Logo de la empresa" className="h-12 w-12" />
+                    <img src="/images/logo/negro2.png" alt="Logo de la empresa" className="w-16" />
                 </div>
-                <div className="flex items-center space-x-10">
+                <div className="flex items-center space-x-6 z-10">
                     <NavLink href="/" text="Inicio" />
-                    <NavLink href="/sobre-nosotros" text="Nosotros" />
+                    <NavLink href="/nosotros" text="Nosotros" />
                     <NavLinkDropdown text="Productos">
                         <DropdownItem href="/envase-al-vacio" text="Envase al vacío">
                             <DropdownSubItem href="/tapa" text="- Tapa y Fondo" />
@@ -26,10 +28,14 @@ const Navbar = () => {
                             <DropdownSubItem href="/choclo" text="- Choclo" />
                             <DropdownSubItem href="/bigbag" text="- BigBag" />
                         </DropdownItem>
-                        <DropdownItemPoliestireno text="Poliestireno" />
+                        <Link href="/poliestireno">
+                            <DropdownItemPoliestireno text="Poliestireno" />
+                        </Link>
                     </NavLinkDropdown>
                 </div>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-sm text-xl">Contacto</button>
+                <Link href="/contacto">
+                    <button className="border-2 border-blue-500 bg-blue-500 hover:bg-white hover:text-blue-500 hover:border-2 transition duration-300 hover:font-bold hover:border-blue-500 hover:rounded text-white px-4 py-2 rounded-sm text-xl">Contacto</button>
+                </Link>
             </div>
         </nav>
     );
