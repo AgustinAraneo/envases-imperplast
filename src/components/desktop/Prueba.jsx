@@ -10,7 +10,7 @@ import ScrollButton from '../ui/ScrollButton'
 
 const Prueba = () => {
     return (
-        <div className=''>
+        <div className='fadeIn'>
             <ScrollButton />
             <Home />
             <ProductosHome />

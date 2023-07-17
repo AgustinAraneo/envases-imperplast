@@ -2,41 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .containerHome {
-    position: relative;
-    background: #e5e7eb;
-    height: 40vh;
-}
+/* Animacion */
 
-.wave {
-    position: absolute;
-    height: 80px;
-    width: 100%;
-    background: #e5e7eb;
-    top: 0;
-}
-
-.wave::before,
-.wave::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-}
-
-.wave::before {
-    width: 55%;
-    height: 100%;
-    background-color: #e5e7eb;
-    right: -1.5%;
-    bottom: 40%;
-}
-
-.wave::after {
-    width: 55%;
-    height: 109%;
-    background-color: #fff;
-    left: -1.5%;
-    bottom: 60%;
-
-} */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    /* Duración de la animación */
+  }
+  
+  
+  /* Fin de la animacion     */
